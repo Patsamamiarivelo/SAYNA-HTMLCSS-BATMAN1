@@ -1,3 +1,12 @@
-img{
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2? family= Rajdhani:wght@300;400;500;600;700 & family= Space+Grotesk:wght@300;400;500; 600;700 & display=swap');
+
+@font-face{
+    font-family:'rajdhani';
+    src: url(:../polices/Rajdhani-Medium.ttf);
+}
+
+h1{
+    color: red;
+    font-family: 'Rajdhani';
+    font-weight: 400;
 }
