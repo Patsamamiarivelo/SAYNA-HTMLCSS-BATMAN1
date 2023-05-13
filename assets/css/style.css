@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2? family= Rajdhani:wght@300;400;500;600;700 & family= Space+Grotesk:wght@300;400;500; 600;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500; 600;700&display=swap');
 
-/* @font-face{
+/*@font-face{
     font-family:'Rajdhani';
-    src: url(:../polices/Rajdhani-Medium.ttf); */
+    src: url(:../polices/Rajdhani-Medium.ttf);
+}*/
 
 
 :root{
@@ -36,7 +37,7 @@ button{
 body{
     background-color: black;
     color: white;
-    font-family: 'Space+Grotesk';
+    font-family: 'Space Grotesk';
     font-weight: 300;
 }
 /* Design de la navigation */
@@ -123,3 +124,62 @@ nav ul a:hover{
     font-weight: bold;
     margin: 30px 0;
 }
+#batman-cinéma .description, #batman-adversaires .description, #batman-alliés .description, #batman-justice-league .description, #multimédia .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+    font-family: 'Space Grotesk';
+}
+#batman-cinéma .personnage-info, #batman-adversaires .personnage-info, #batman-alliés .personnage-info{
+    text-align: center;
+}
+
+/* Design section - multimédia */
+
+#multimédia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+#multimédia button.right{
+    right: -85%;
+}
+#multimédia .slider-multimédia{
+    display: flex;
+    width: 35%;
+    margin: 30px auto;
+    font-family: 'Space Grotesk';
+}
+#multimédia .slider-image{
+    width: 60%;
+}
+#multimédia .slider-content{
+    padding: 20px;
+    background: linear-gradient(#eddebf, #413e3e) ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}  
+#multimédia p{
+    font-size: 14px;
+    padding: 2px;
+}
+#multimédia  h2{
+    font-size: 10px;
+    padding: 2px;
+}
+#multimédia h3{
+    font-size: 20px;
+    padding: 2px;
+}
+#multimédia .yellow{
+    color: var(--yellow-color);
+}
+#multimédia .image-bande-annonce{
+    text-align: center;
+    padding: 80px;
+}
+
+
+
