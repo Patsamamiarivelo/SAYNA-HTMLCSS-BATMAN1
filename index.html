@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="up-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
      <header>
          <nav class="container">
             <a href="index.html"><img class="logo" src="./assets/Logos/logohome.png" alt="logohome">
@@ -191,53 +194,60 @@
         <!--section - le formulaire-->
         <section id="contact">
             <div class="form">
-                <h2 class="titre">PRENONS CONTACT</h2>
+                <h2>prenons contact</h2>
                 <form action="">
-                    <label for="email">ADRESSE EMAIL</label><br>
-                    <input type="email" name="email" placeholder=" Adresse email"><br>
-                    <label for="newsletter">NEWSLETTER</label> <br>
-                    <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
-                        Batman :</label><br>
-                    <input type="checkbox"><br>
+                    <label class="titre" for="email">ADRESSE EMAIL</label>
+                    <input type="email" name="email" placeholder=" Adresse email">
+                    <label class="titre" for="newsletter">NEWSLETTER</label>
+                    <label class="coch" for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
+                        Batman :</label>
+                    <input type="checkbox">
                     <div>
-                      <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span> 
-                      <span><img src="./assets/Logos/icon_flèche_2.png" alt=""></span>
+                      <span class="holder">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span> 
+                      <span class="icon"><img src="./assets/Logos/icon_flèche_2.png" alt=""></span>
                     </div>
                     <div>
-                        <p>Souhaitez-vous recevoir des news</p>
-                    </div>   
-                    <a href="">Des films</a>
-                    <a href="">Des comics</a>
-                    <a href="">De tout</a><br>
-                    <label>MESSAGE</label><br>
+                        <p class="news">Souhaitez-vous recevoir des news</p>
+                    </div> 
+                    <div class="btn-group">
+                        <input type="radio" id="film">
+                        <label for="film">Des films</label>
+                        <input type="radio" id="comics">
+                        <label for="comics">Des comics</label>
+                        <input type="radio" id="tout">
+                        <label for="tout">De tout</label>
+                    </div>  
+                    <label class="titre">MESSAGE</label><br>
                     <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea><br>
-                    <input type="submit" value="CONFIRMER">
+                    <input type="submit" value="confirmer">
                 </form>
             </div>
         </section>
         <!--section - citation--> 
-        <section>
-            <div>
-                <div>
+        <section id="citations">
+            <div class="container">
+                <div class="guillemet-open">
                     <img src="./assets/Logos/icon_guillemets_1.png" alt="">
                 </div>
                 <div>
-                    <div>
-                        <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
+                    <div class="citation-carte">
+                        <p class="citation-text">La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
                     </div>
-                    <div>
-                        <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+                    <div class="citation-auteur">
+                        The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)
                     </div>
                 </div>
-                <div>
+                <div class="guillemet-close">
                     <img src="./assets/Logos/icon_guillemets_2.png" alt="">
                 </div>
             </div>
         </section>
     </main>
+    <div class="clearfix"></div>
+    <!--Footer-->
     <footer>
         <div>
-            <div>
+            <div class="wb">
                 <img src="./assets/Logos/icon_WB.png" alt=""><p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
             </div>
             <div>

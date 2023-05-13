@@ -12,7 +12,7 @@
     --blue-color : #19587d;
     --white-color:#FFF;
     --gradient-white:#eddebf67;
-    --gradient-red:#8900095e;
+    --gradient-red:#890009;
     --black-color: #000;
 }
 h1{
@@ -157,7 +157,7 @@ nav ul a:hover{
 }
 #multimédia .slider-content{
     padding: 20px;
-    background: linear-gradient(#eddebf, #413e3e) ;
+    background: linear-gradient(90deg,#eddebf, #102830);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }  
@@ -181,5 +181,146 @@ nav ul a:hover{
     padding: 80px;
 }
 
+/* Désign section - formulaire*/
+
+#contact{
+    background: linear-gradient(90deg,#eddebf, #102830);
+    padding: 70px;
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Rajdhani';
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    font-family: 'Rajdhani';
+}
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+#contact .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(167, 167, 167);
+    background-color: transparent;
+    padding: 10px 0;
+}
+#contact .holder{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(167, 167, 167);
+    cursor: pointer;
+}
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(167, 167, 167);
+}
+
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 10px;
+    cursor: pointer;
+}
+#contact .coch {
+    margin-bottom: 20px;
+}
+
+::-webkit-input-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+    }
+
+::-moz-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+    }
+
+:-ms-input-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+    }
+
+::-ms-input-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+    }
+
+::placeholder{
+    color: #f8f184;
+    font-size: 15px;
+    }
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type='radio']{
+    opacity: 0;
+}
+
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+          -o-border-image:  linear-gradient(
+            69deg,red,blue
+          ) 1;
+             border-image:  linear-gradient(
+            69deg,red,blue
+          ) 1;
+    
+    font-size: 20px;
+    }
+
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 10px 40px;
+    background: linear-gradient(
+            80deg,var(--gradient-white),var(--gradient-red)
+        );
+    font-family: 'Rajdhani';
+    text-transform: uppercase;
+    border-bottom: none;
+}
+
+/* Design section - citation*/
+
+#citations{
+    margin: 90px;
+    font-family: 'Rajdhani';
+}
+
+#citations .citation-carte{
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+    font-weight: bold;
+    
+}
+
+#citations .citation-auteur{
+    padding-top: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#citations .guillemet-close{
+float: right;
+}
 
 
