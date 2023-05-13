@@ -1,12 +1,125 @@
 @import url('https://fonts.googleapis.com/css2? family= Rajdhani:wght@300;400;500;600;700 & family= Space+Grotesk:wght@300;400;500; 600;700 & display=swap');
 
-@font-face{
-    font-family:'rajdhani';
-    src: url(:../polices/Rajdhani-Medium.ttf);
+/* @font-face{
+    font-family:'Rajdhani';
+    src: url(:../polices/Rajdhani-Medium.ttf); */
+
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #f8f184;
+    --blue-color : #19587d;
+    --white-color:#FFF;
+    --gradient-white:#eddebf67;
+    --gradient-red:#8900095e;
+    --black-color: #000;
+}
+h1{
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}   
+button{
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Space+Grotesk';
+    font-weight: 300;
+}
+/* Design de la navigation */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul{
+    list-style: none;
+}
+nav ul a{
+    color: var(--white-color) ;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Rajdhani';
+}
+nav ul a:hover{
+    color: var(--yellow-color);
 }
 
-h1{
-    color: red;
-    font-family: 'Rajdhani';
-    font-weight: 400;
+/* Design section - hero */
+
+#hero {
+    background-image: url(../Home/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587d;
+    background-size: cover;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+#hero .titre{
+    margin: 20px 0;
+}
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: var(--black-color) 15px 15px 50px;
+}
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 285px;
+}
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15px;
+}
+
+/* Design section -Batman personnage */
+
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+#batman-cinéma, #batman-adversaires, #batman-alliés, #batman-justice-league, #multimédia{
+    margin-top: 40px;
+}
+#batman-cinéma .titre, #batman-adversaires .titre, #batman-alliés .titre, #batman-justice-league .titre, #multimédia .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
 }
