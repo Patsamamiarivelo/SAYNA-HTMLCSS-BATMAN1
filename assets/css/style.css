@@ -55,9 +55,16 @@ nav ul a{
     font-size: 30px;
     font-weight: 500;
     font-family: 'Rajdhani';
+    text-decoration: none; 
 }
-nav ul a:hover{
+nav ul a:hover, a.active{
     color: var(--yellow-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.logo:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+            filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
 }
 
 /* Design section - hero */
@@ -79,8 +86,15 @@ nav ul a:hover{
     margin: 0 auto;
     padding-top: 150px;
 }
+#hero .texte{
+    font-size: 20px;
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+    font-family: 'Space Grotesk';
+}
 #hero .titre{
-    margin: 20px 0;
+    margin: 50px 0;
 }
 .btn{
     text-decoration: none;
@@ -92,6 +106,7 @@ nav ul a:hover{
         80deg,var(--gradient-white),var(--gradient-red)
     );
     box-shadow: var(--black-color) 15px 15px 50px;
+    font-family: 'Rajdhani';
 }
 #hero .fleche{
     display: block;
@@ -312,15 +327,38 @@ input[type='submit']{
     font-weight: bold;
     
 }
-
 #citations .citation-auteur{
     padding-top: 30px;
     font-size: 15px;
     text-align: center;
 }
-
 #citations .guillemet-close{
 float: right;
 }
 
+/* Design - footer */
 
+footer{
+    margin-top: 170px;
+}
+footer .text-footer{
+text-align: center;
+font-size: 14px;
+    }
+footer .text-footer img{
+    position: relative;
+    top: 15px;
+    margin: 8px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-footer .social-item{
+    padding: 15px;
+}
+footer .social-footer .logo-item{
+    position: relative;
+    top: 10px;
+    padding: 10px;
+}
