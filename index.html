@@ -23,11 +23,11 @@
     <main>
         <!-- Les reseaux sociaux - scrolling-->
         <div class="scroll">
-            <img src="./assets/Logos/logo_bat_flèche.png" alt="">
-            <img class="social"src="./assets/Logos/icon_facebook.png" alt="">
-            <img class="social"src="./assets/Logos/icon_ig.png" alt="">
-            <img class="social"src="./assets/Logos/icon_tw.png" alt="">
-            <img src="./assets/Logos/logo_bat_flèche_2.png" alt="">
+            <a href="#top"><img class="logo" src="./assets/Logos/logo_bat_flèche.png" alt=""></a>
+            <a href="#"><img class="social"src="./assets/Logos/icon_facebook.png" alt=""></a>
+            <a href="#"><img class="social"src="./assets/Logos/icon_ig.png" alt=""></a>
+            <a href="#"><img class="social"src="./assets/Logos/icon_tw.png" alt=""></a>
+            <a href="#contact"><img class="logo" src="./assets/Logos/logo_bat_flèche_2.png" alt=""></a>
         </div>
        <!--section - hero --> 
         <section id="hero">
@@ -36,7 +36,7 @@
                     <p class="texte">Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.</p>
                     <h2 class="titre">Il est Batman.</h2>
                     <div class="cta">
-                    <a class="btn" href="#batman-cinéma">VOIR LE HEROS</a>
+                    <a class="btn" href="#batman-cinéma">VOIR LES HEROS</a>
                     <a class="btn" href="#batman-adversaires">LES ADVERSAIRES</a>
                     </div>
                 </div> 
@@ -187,7 +187,7 @@
                     </div>
                 </div>
                 <div class="image-bande-annonce">
-                    <img src="./assets/Home/Bathome_ba2.png" alt="">
+                    <a href="https://www.youtube.com/watch?v=jXrFsn9pcZY" target="_blank"><img src="./assets/Home/Bathome_ba2.png" alt=""></a>
                 </div>
             </div>
         </section  >
@@ -203,8 +203,19 @@
                         Batman :</label>
                     <input type="checkbox">
                     <div>
-                      <span class="holder">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span> 
+                      <ul>
+
+
+                      </ul>
+                        <a class="holder">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</a>
                       <span class="icon"><img src="./assets/Logos/icon_flèche_2.png" alt=""></span>
+                      <select name="frequency" id="frequency">
+                        <option value="une">Une fois par semaine</option>
+                        <option value="deux">Une fois toutes les deux semaines</option>
+                        <option value="mois">Une fois par mois</option>
+                        <option value="trois">Une fois tous les trois mois</option>
+                        <option value="six">Une fois tous les six mois</option>
+                      </select>
                     </div>
                     <div>
                         <p class="news">Souhaitez-vous recevoir des news</p>
