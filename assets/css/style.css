@@ -40,6 +40,24 @@ body{
     font-family: 'Space Grotesk';
     font-weight: 300;
 }
+.up-bar{
+    border-top: 2px solid #BCBBBD;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px
+}
+.right-bar{
+    border-right: 2px solid #BCBBBD;
+    width: 85%;
+    left: 102px
+}
+.left-bar{
+    border-left: 2px solid #BCBBBD;
+    position: relative;
+    width: 85%;
+    left: 102px
+}
 /* Design de la navigation */
 nav{
     display: flex;
@@ -71,10 +89,10 @@ nav ul a:hover, a.active{
 
 #hero {
     background-image: url(../Home/Bathome1.png);
-    height: 800px;
+    height: 1100px;
     background-position: top center;
     background-repeat: no-repeat;
-    background-color: #19587d;
+    background-color: #0b0f11;
     background-size: cover;
 }
 .content{
@@ -84,7 +102,7 @@ nav ul a:hover, a.active{
     text-align: center;
     width: 60%;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 300px;
 }
 #hero .texte{
     font-size: 20px;
@@ -95,6 +113,7 @@ nav ul a:hover, a.active{
 }
 #hero .titre{
     margin: 50px 0;
+    font-size: 30px;
 }
 .btn{
     text-decoration: none;
@@ -107,11 +126,15 @@ nav ul a:hover, a.active{
     );
     box-shadow: var(--black-color) 15px 15px 50px;
     font-family: 'Rajdhani';
+    opacity: 0.4; 
+}
+.btn:hover{
+    opacity: 1;
 }
 #hero .fleche{
     display: block;
     margin: 0 auto;
-    margin-top: 285px;
+    margin-top: 270px;
 }
 .scroll {
     display: flex;
@@ -124,6 +147,11 @@ nav ul a:hover, a.active{
 .scroll .social{
     margin-top: 15px;
 }
+.scroll .social:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+            filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+}
+
 
 /* Design section -Batman personnage */
 
@@ -132,7 +160,7 @@ nav ul a:hover, a.active{
     justify-content: space-between;
 }
 #batman-cinéma, #batman-adversaires, #batman-alliés, #batman-justice-league, #multimédia{
-    margin-top: 40px;
+    margin-top: 80px;
 }
 #batman-cinéma .titre, #batman-adversaires .titre, #batman-alliés .titre, #batman-justice-league .titre, #multimédia .titre{
     text-transform: uppercase;
@@ -148,6 +176,13 @@ nav ul a:hover, a.active{
 }
 #batman-cinéma .personnage-info, #batman-adversaires .personnage-info, #batman-alliés .personnage-info{
     text-align: center;
+}
+#batman-cinéma img, #batman-adversaires img, #batman-alliés img{
+    transition: transform 0.2s ease-in-out;
+    padding-top: 15%;
+}
+#batman-cinéma img:hover, #batman-adversaires img:hover, #batman-alliés img:hover{
+    transform: scale(1.1);
 }
 
 /* Design section - multimédia */
@@ -216,8 +251,10 @@ nav ul a:hover, a.active{
 }
 #contact .titre{
     display: block;
-    margin: 28px 0;
+    margin: 30px 0;
+    font-size: 20px;
 }
+
 #contact .form input[type='email'], textarea{
     display: block;
     border-top: none;
@@ -228,13 +265,20 @@ nav ul a:hover, a.active{
     background-color: transparent;
     padding: 10px 0;
 }
+
 #contact .holder{
-    margin: 15px 0;
+    margin: 40px 0;
     border-bottom: 2px solid rgb(167, 167, 167);
     cursor: pointer;
 }
+
+option{
+    background: linear-gradient(90deg,#eddebf, #102830);
+    color: var(--black-color);
+}
+
 #contact .news{
-    margin: 15px 0;
+    margin: 20px 0;
     border-bottom: 2px solid rgb(167, 167, 167);
 }
 
@@ -276,6 +320,7 @@ nav ul a:hover, a.active{
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    opacity: 0.4;
 }
 
 .form input[type='radio']{
@@ -356,6 +401,10 @@ footer .social-footer{
 }
 footer .social-footer .social-item{
     padding: 15px;
+}
+.social-item:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+    filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
 }
 footer .social-footer .logo-item{
     position: relative;
