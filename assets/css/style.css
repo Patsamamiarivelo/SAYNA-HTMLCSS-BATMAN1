@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500; 600;700&display=swap');
 
-/*@font-face{
-    font-family:'Rajdhani';
-    src: url(:../polices/Rajdhani-Medium.ttf);
-}*/
-
-
 :root{
     --yellow-color: #FFFF00;
     --yellow-light: #f8f184;
@@ -159,6 +153,16 @@ nav ul a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+.batman-item{
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}   
+.batman-item:hover{
+    transform: scale(1.1);
+}
 #batman-cinéma, #batman-adversaires, #batman-alliés, #batman-justice-league, #multimédia{
     margin-top: 80px;
 }
@@ -181,9 +185,7 @@ nav ul a:hover, a.active{
     transition: transform 0.2s ease-in-out;
     padding-top: 15%;
 }
-#batman-cinéma img:hover, #batman-adversaires img:hover, #batman-alliés img:hover{
-    transform: scale(1.1);
-}
+
 
 /* Design section - multimédia */
 
@@ -234,7 +236,7 @@ nav ul a:hover, a.active{
 /* Désign section - formulaire*/
 
 #contact{
-    background: linear-gradient(90deg,#eddebf, #102830);
+    background: linear-gradient(50deg,#eddebf, #102830);
     padding: 70px;
 }
 #contact .form{
@@ -255,37 +257,25 @@ nav ul a:hover, a.active{
     font-size: 20px;
 }
 
-#contact .form input[type='email'], textarea{
-    display: block;
+#contact .form input[type='email'], textarea, .holder, .news, .icon{
+    display: flex;
     border-top: none;
     border-right: none;
     border-left: none;
     width: 80%;
     border-bottom: 2px solid rgb(167, 167, 167);
     background-color: transparent;
-    padding: 10px 0;
+    padding: 5px 0;
+    margin: 30px 0;
 }
 
-#contact .holder{
-    margin: 40px 0;
-    border-bottom: 2px solid rgb(167, 167, 167);
-    cursor: pointer;
-}
-
-option{
-    background: linear-gradient(90deg,#eddebf, #102830);
-    color: var(--black-color);
-}
-
-#contact .news{
-    margin: 20px 0;
-    border-bottom: 2px solid rgb(167, 167, 167);
-}
-
-#contact .icon img{
+#contact img{
     transform: rotate(90deg);
-    width: 10px;
+    width: 15px;
     cursor: pointer;
+    position: relative;
+    float: right;
+    display: flex;
 }
 #contact .coch {
     margin-bottom: 20px;
@@ -315,32 +305,108 @@ option{
     color: #f8f184;
     font-size: 15px;
     }
+ .frequency{
+    list-style: none;
+    background:none;
+    text-align: justify;
+    margin-top: 20px;
+}
+.frequency li a{
+    display: block;
+    color: var(--white-color);
+    border-bottom: 2px solid rgb(167, 167, 167);
+    height: 30px;
+    text-decoration: none;
+    width: 80%;
+} 
+.frequency .choice li{
+    display: none;
+    margin: 0;
+    padding: 0;
+} 
+.frequency li a:hover .choice li{
+    display: block;
+}
 
-.btn-group{
-    padding: 10px;
+/*.frequency .choice li a{
+   
+    margin: 0;
+    padding: 0;
+} 
+    border-bottom: 2px solid rgb(167, 167, 167);
+    width: 100%;
+    text-align: justify;
+}
+.frequency .choice li a:link, .frequency .choice li a:visited{
+    display: block;
+    color: var(--white-color);
+    background:none;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(167, 167, 167);
+    width: 100%;
+    text-align: justify;
+}
+
+*/
+.btn-grp{
+    margin: 10px 200px;
     display: flex;
     justify-content: space-around;
-    opacity: 0.4;
 }
-
-.form input[type='radio']{
-    opacity: 0;
-}
-
-.btn-group label{
-    cursor: pointer;
+.films{
+    opacity: 0.6;
+    text-decoration: none;
     border: 2px solid;
     padding: 10px;
           -o-border-image:  linear-gradient(
-            69deg,red,blue
+            69deg,#eddebf67,#19587d
           ) 1;
              border-image:  linear-gradient(
-            69deg,red,blue
+            69deg,#eddebf67,#19587d
           ) 1;
-    
     font-size: 20px;
+    color: var(--white-color)
+}
+.films:hover{
+    opacity: 1;
+    background: linear-gradient(90deg,#eddebf, #102830);
     }
-
+.comics{
+    opacity: 0.6;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 10px;
+          -o-border-image:  linear-gradient(
+            69deg,#eddebf67,#19587d
+          ) 1;
+             border-image:  linear-gradient(
+            69deg,#eddebf67,#19587d
+          ) 1;
+    font-size: 20px;
+    color: var(--white-color)
+}
+.comics:hover{
+    opacity: 1;
+    background: linear-gradient(90deg,#eddebf, #102830);
+    }
+.tout{
+    opacity: 0.6;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 10px;
+          -o-border-image:  linear-gradient(
+            69deg,#eddebf67,#19587d
+          ) 1;
+             border-image:  linear-gradient(
+            69deg,#eddebf67,#19587d
+          ) 1;
+    font-size: 20px;
+    color: var(--white-color)
+}
+.tout:hover{
+    opacity: 1;
+    background: linear-gradient(90deg,#eddebf, #102830);
+    }
 input[type='submit']{
     display: block;
     width: 230px;
@@ -355,7 +421,6 @@ input[type='submit']{
         );
     font-family: 'Rajdhani';
     text-transform: uppercase;
-    border-bottom: none;
 }
 
 /* Design section - citation*/
@@ -410,4 +475,12 @@ footer .social-footer .logo-item{
     position: relative;
     top: 10px;
     padding: 10px;
+}
+.logo-item:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+    filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+}
+.wb:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+    filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
 }

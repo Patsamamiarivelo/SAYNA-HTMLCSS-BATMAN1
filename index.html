@@ -203,33 +203,30 @@
                         Batman :</label>
                     <input type="checkbox">
                     <div>
-                      <ul>
-
-
-                      </ul>
-                        <a class="holder">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</a>
-                      <span class="icon"><img src="./assets/Logos/icon_flèche_2.png" alt=""></span>
-                      <select name="frequency" id="frequency">
-                        <option value="une">Une fois par semaine</option>
-                        <option value="deux">Une fois toutes les deux semaines</option>
-                        <option value="mois">Une fois par mois</option>
-                        <option value="trois">Une fois tous les trois mois</option>
-                        <option value="six">Une fois tous les six mois</option>
-                      </select>
+                      <ul class="frequency">
+                        <li><a href="#choice">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</a>
+                            <img src="./assets/Logos/icon_flèche_2.png" alt="open">
+                        </li>
+                            <ul class="choice">
+                                <li><a href="#choice"> Une fois par semaine</a></li>
+                                <li><a href="#choice"> Une fois toutes les deux semaines</a></li>
+                                <li><a href="#choice"> Une fois par mois</a></li>
+                                <li><a href="#choice"> Une fois tous les trois mois</a></li>
+                                <li><a href="#choice"> Une fois tous les six mois</a></li>
+                            </ul>
+                        
+                     </ul>
                     </div>
                     <div>
                         <p class="news">Souhaitez-vous recevoir des news</p>
                     </div> 
-                    <div class="btn-group">
-                        <input type="radio" id="film">
-                        <label for="film">Des films</label>
-                        <input type="radio" id="comics">
-                        <label for="comics">Des comics</label>
-                        <input type="radio" id="tout">
-                        <label for="tout">De tout</label>
+                    <div class="btn-grp">
+                        <a class="films" href="#">Des films</a>
+                        <a class="comics" href="#">Des comics</a>
+                        <a class="tout" href="#">De tout</a>
                     </div>  
-                    <label class="titre">MESSAGE</label><br>
-                    <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea><br>
+                    <label class="titre">MESSAGE</label>
+                    <textarea name="" id="" cols="20" placeholder="Laissez un commentaire pour la communauté"></textarea>
                     <input type="submit" value="confirmer">
                 </form>
             </div>
