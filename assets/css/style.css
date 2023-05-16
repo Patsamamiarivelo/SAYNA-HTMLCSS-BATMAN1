@@ -33,18 +33,20 @@ body{
     color: white;
     font-family: 'Space Grotesk';
     font-weight: 300;
-    animation: fade-in;
+    animation: fade-in 2s ease-out forwards;
 }
-@keyframes fade-in {
+/* Animations fade-in*/
+@keyframes fade-in{
     0% {
-    Opacity : 0;
-    left: -50%;
+      opacity: 0;
+      left: -20%;
     }
-    100%{
-    Opacity : 1 ;
-    right: 0;
+    100% {
+      opacity: 1;
+      right: 0;
     }
-    }
+}
+/* lignes discrète*/
 .up-bar{
     border-top: 2px solid #BCBBBD;
     position: relative;
@@ -66,18 +68,6 @@ body{
     height: 835%;
     left: 102px;
 }
-
-/* Animations fade-in
-@keyframes fade-in{
-    0% {
-      opacity: 0;
-      left: -50%;
-    }
-    100% {
-      opacity: 1;
-      left: 0;
-    }
-}*/
 
 /*Responsive*/
 @media (max-width: 600px) {
