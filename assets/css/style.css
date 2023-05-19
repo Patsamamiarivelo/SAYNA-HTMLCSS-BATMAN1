@@ -63,14 +63,14 @@ h1, h2, h3, p, img, input{
     border-right: 2px solid #BCBBBD;
     position: absolute;
     width: 2px;
-    height: 835%;
+    height: 800%;
     right: 102px;
 }
 .left-bar{
     border-left: 2px solid #BCBBBD;
     position: absolute;
     width: 2px;
-    height: 835%;
+    height: 800%;
     left: 102px;
 }
 
@@ -190,7 +190,6 @@ nav ul a:hover, a.active{
             filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
 }
 
-
 /* Design section -Batman personnage */
 
 .batman-personnage{
@@ -239,7 +238,6 @@ nav ul a:hover, a.active{
     width: 30%;
     z-index: 3;
 }
-
 
 /* Design section - multimédia */
 
@@ -308,7 +306,6 @@ nav ul a:hover, a.active{
     top: 41%;
 } 
 
-
 /* Désign section - formulaire*/
 
 #contact{
@@ -347,7 +344,6 @@ nav ul a:hover, a.active{
 #contact .coch {
     margin-bottom: 20px;
 }
-
 
 ::-webkit-input-placeholder{
     color: #f8f184;
@@ -528,7 +524,8 @@ footer{
 footer .text-footer{
 text-align: center;
 font-size: 14px;
-    }
+font-family: 'Space Grotesk';
+}
 footer .text-footer img{
     position: relative;
     top: 15px;
