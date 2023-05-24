@@ -472,7 +472,27 @@ nav ul a:hover, a.active{
     }
 
 /*Design Confirmer*/ 
-input[type='submit']{
+.button {
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 10px 40px;
+    background: linear-gradient(
+            80deg,var(--gradient-white),var(--gradient-red)
+        );
+    font-family: 'Rajdhani';
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+  }
+  .button:hover {
+    background: linear-gradient(90deg,#eddebf, #102830);
+  }
+/*input[type='submit']{
     display: block;
     width: 230px;
     margin: 25px auto;
@@ -491,8 +511,59 @@ input[type='submit']{
 
 input[type='submit']:hover{
     background: linear-gradient(90deg,#eddebf, #102830);
+    }*/
+/* Design Popup*/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg,#eddebf, #102830);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: var(--white-color);
+    font-family:'cantarell';
+    text-transform: capitalize;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--grayish-color);
+  }
+  .popup .close:hover {
+    color: var(--white-color);
+  }
+  
+  @media screen and (max-width: 700px){
+    .popup{
+      width: 70%;
     }
-
+  }
 /* Design section - citation*/
 
 #citations{
